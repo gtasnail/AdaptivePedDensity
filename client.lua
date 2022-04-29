@@ -21,7 +21,7 @@ Pogfig.Rate10 = 0.0
 function getCount()
 	local Count = 0
 	local returnFloat = 1.0
-	for _, Player in pairs(GetActivePlayers()) do -- probably doest work for onesync but hey :P
+	for _, Player in pairs(GetActivePlayers()) do -- probably doesnt work for onesync but hey :P
 		Count = Count + 1 -- change this to amount of "fake players" you want to test
 		if Count > 1 then
 			returnFloat = returnFloat+ -0.01 * Count
